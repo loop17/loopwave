@@ -38,12 +38,23 @@
 
   :root{--accent:#86500b;--bg:#f5f4ef;--card:#fffefa;--text:#172923;--dim:#58665f;--line:#dbe1d9}
   body{line-height:1.7} main{max-width:960px;padding:48px 20px 64px} header{padding:32px 0 12px} h1{font-size:clamp(40px,9vw,78px);line-height:1.15;letter-spacing:-3px;color:var(--text)} h1 span{color:var(--accent);font-size:.65em;margin-left:16px} .eyebrow{font-size:12px;letter-spacing:2px;font-weight:750;color:var(--dim);margin:0 0 12px} .sub{margin-top:18px} nav{flex-wrap:wrap;margin:24px 0 32px} nav a{min-height:44px;display:inline-flex;align-items:center;padding:8px 22px;background:var(--card);font-weight:650} section.lang{padding:28px clamp(18px,4vw,40px) 36px;border-radius:24px;margin-bottom:32px;scroll-margin-top:20px} h2{font-size:26px;line-height:1.35;margin-top:32px} h3{font-size:18px} .contacts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0} .contact-card{display:block;text-decoration:none;border:1px solid var(--line);padding:16px;border-radius:12px;color:var(--text);overflow-wrap:anywhere}.contact-card span{display:block;font-size:13px;color:var(--dim)} .contact-card strong{font-size:17px}.contact-card:hover{border-color:var(--accent)} .support{background:var(--bg);padding:8px 22px 18px;border-radius:16px;margin:24px 0} .button{display:inline-block;background:#214b3c;color:#fff;padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:650;min-height:44px}.button:hover{background:#16372b} .contact{border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:30px} a{overflow-wrap:anywhere;text-underline-offset:3px} a:focus-visible{outline:3px solid var(--accent);outline-offset:4px} footer{text-align:center;color:var(--dim);padding:16px} td,th{overflow-wrap:anywhere} @media(max-width:560px){.contacts{grid-template-columns:1fr}main{padding:20px 12px 40px}header{padding:20px 8px 8px}nav{padding:0 8px}h1{letter-spacing:-2px}.support{padding:8px 16px 18px}table{font-size:14px}} @media(prefers-color-scheme:dark){:root{--bg:#111c18;--card:#192720;--text:#eef3ea;--dim:#b1bfb5;--accent:#efbd70;--line:#34473a}.button{background:#bfdfb6;color:#172923}.button:hover{background:#d7edcf}}
+
+/* LOOPWAVE branding: original Loop17 artwork and bundled game typeface. */
+@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:700;src:url('./spacegrotesk-latin.woff2') format('woff2');font-display:swap}
+:root{color-scheme:dark;--bg:#060a16;--card:#0c1329;--text:#e8ecf7;--dim:#a3aece;--accent:#ffd166;--line:#263454}
+body{background:radial-gradient(ellipse at 50% 0%,#101a36 0%,#060a16 650px);background-color:var(--bg)}
+header{padding:32px 0 24px}.brand-top{display:flex;align-items:center;gap:18px;margin-bottom:36px}.brand-logo{display:block;width:112px;height:112px;border-radius:22px;background:#fff;object-fit:contain}.brand-top .eyebrow{margin:0;color:#a3aece}
+h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(38px,10vw,88px);line-height:1.12;letter-spacing:1px;background:linear-gradient(180deg,#fff7df,#ffd166);background-clip:text;-webkit-background-clip:text;color:transparent}.game-byline{color:#a3aece;font-size:18px;margin:8px 0 0}.sub{color:var(--dim)}
+nav a:hover{background:#12213b}section.lang{box-shadow:0 12px 40px #0002}.button{background:#ffd166;color:#091120}.button:hover{background:#ffe29b}.support{border:1px solid var(--line)}
+@media(prefers-color-scheme:dark){:root{--bg:#060a16;--card:#0c1329;--text:#e8ecf7;--dim:#a3aece;--accent:#ffd166;--line:#263454}.button{background:#ffd166;color:#091120}.button:hover{background:#ffe29b}}
+@media(max-width:560px){.brand-top{gap:14px;margin-bottom:28px}.brand-logo{width:88px;height:88px;border-radius:18px}h1{letter-spacing:1px}.brand-top .eyebrow{font-size:11px}header{padding-top:16px}}
+
 </style>
 </head>
 <body>
 <main>
   <header>
-    <p class="eyebrow">LOOP17 / ANDROID</p><h1>LOOPWAVE<span aria-hidden="true">↗</span></h1>
+    <div class="brand-top"><img class="brand-logo" src="./loop17-logo.png" width="112" height="112" alt="Loop17"><p class="eyebrow">LOOP17 / ANDROID</p></div><h1>LOOPWAVE</h1><p class="game-byline">by Loop17</p>
     <p class="sub">Kontakt, Unterstützung &amp; Datenschutz<br><span lang="en">Contact, support &amp; privacy</span> · <span lang="ru">Контакты, поддержка и конфиденциальность</span></p>
   </header>
 
