@@ -3,51 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LOOPWAVE – Datenschutz</title>
-<meta name="description" content="Datenschutzerklärung und Impressum der App LOOPWAVE von Loop17.">
+<title>LOOPWAVE von Loop17 – Kontakt, Unterstützung &amp; Datenschutz</title>
+<meta name="description" content="LOOPWAVE von Loop17: Kontakt, Unterstützung, Datenschutzerklärung und Impressum – Deutsch, English, Русский, Français.">
 <style>
-  :root{
-    --bg:#f4f6fb; --card:#ffffff; --text:#1a2138; --dim:#5a6480; --accent:#d9892e; --line:#dde3f1;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{ --bg:#060a16; --card:#0c1329; --text:#e8ecf7; --dim:#9aa5c4; --accent:#ffc861; --line:#1c2748; }
-  }
-  *{box-sizing:border-box}
-  body{margin:0; background:var(--bg); color:var(--text);
-    font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;}
-  main{max-width:720px; margin:0 auto; padding:32px 16px 64px;}
-  header{margin-bottom:24px}
-  h1{margin:0; font-size:32px; letter-spacing:1px; color:var(--accent);}
-  .sub{color:var(--dim); margin:4px 0 0;}
-  nav{display:flex; gap:8px; margin:20px 0 28px;}
-  nav a{padding:6px 14px; border:1px solid var(--line); border-radius:999px;
-    color:var(--text); text-decoration:none; font-size:14px;}
-  nav a:hover{border-color:var(--accent);}
-  section.lang{background:var(--card); border:1px solid var(--line); border-radius:16px;
-    padding:8px 24px 24px; margin-bottom:28px;}
-  h2{font-size:22px; margin:20px 0 4px;}
-  h3{font-size:17px; margin:24px 0 4px;}
-  p,li{color:var(--text);}
-  ul{padding-left:20px;}
-  .muted{color:var(--dim); font-size:14px;}
-  table{width:100%; border-collapse:collapse; font-size:15px; margin:8px 0;}
-  th,td{text-align:left; padding:8px 6px; border-bottom:1px solid var(--line); vertical-align:top;}
-  th{color:var(--dim); font-weight:600;}
-  address{font-style:normal;}
-  a{color:var(--accent);}
+@font-face{font-family:"Space Grotesk";src:url("spacegrotesk-latin.woff2") format("woff2");font-weight:300 700;font-display:swap}
+:root{--bg:#070b1a;--card:#0d1328;--line:#1f2a4a;--text:#e8ecf7;--muted:#9aa6c4;--gold1:#ffe29a;--gold2:#f2b75e;--accent:#6ea8ff}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#101a3a 0%,var(--bg) 60%) fixed,var(--bg);color:var(--text);font-family:"Space Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+main{max-width:760px;margin:0 auto;padding:48px 20px 40px}
+a{color:var(--accent)}
+.brand{display:flex;align-items:center;gap:16px}
+.brand img{width:76px;height:76px;border-radius:16px;background:#fff}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0}
+h1{font-size:clamp(44px,9vw,64px);line-height:1;margin:28px 0 10px;background:linear-gradient(180deg,var(--gold1),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.02em}
+.lead{color:var(--muted);margin:0 0 24px;max-width:600px;font-size:15px}
+nav.langs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
+nav.langs a{display:inline-block;padding:7px 16px;border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none;font-weight:600;font-size:14px;background:var(--card)}
+nav.langs a:hover{border-color:var(--accent)}
+section.lang{display:none}
+#de{display:block}
+main:has(.lang:target) #de:not(:target){display:none}
+section.lang:target{display:block}
+section.lang>.eyebrow{margin-bottom:8px}
+section.lang h2{font-size:22px;margin:32px 0 10px}
+section.lang h3{font-size:16px;margin:20px 0 4px}
+section.lang p,section.lang li,section.lang address{color:var(--muted)}
+section.lang address{font-style:normal;margin:0 0 10px}
+section.lang ul{padding-left:20px;margin:0 0 10px}
+.muted{color:var(--muted);font-size:14px}
+.contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:12px 0 16px}
+.contact-card{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 20px;text-decoration:none;color:var(--text)}
+.contact-card:hover{border-color:var(--accent)}
+.contact-card span{display:block;color:var(--muted);font-size:13px}
+.contact-card strong{color:var(--gold2);font-size:16px}
+.support{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin:16px 0}
+.support h3{margin-top:0}
+.button{display:inline-block;margin:6px 0 10px;padding:10px 18px;border-radius:999px;background:linear-gradient(180deg,var(--gold1),var(--gold2));color:#1a1204;text-decoration:none;font-weight:600;font-size:14px}
+table{width:100%;border-collapse:collapse;margin:8px 0 12px;font-size:15px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);color:var(--muted)}
+th{color:var(--text)}
+td:first-child{color:var(--text)}
+footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:16px}
+footer a{color:var(--muted)}
 </style>
 </head>
 <body>
 <main>
-  <header>
-    <h1>LOOPWAVE</h1>
-    <p class="sub">Datenschutzerklärung &amp; Impressum · Privacy Policy &amp; Imprint</p>
-  </header>
-
-  <nav><a href="#de">Deutsch</a><a href="#en">English</a></nav>
-
-  <!-- ===================== DEUTSCH ===================== -->
-  <section class="lang" id="de" lang="de">
+<header>
+<div class="brand"><img src="loop17-logo.png" alt="Loop17" width="76" height="76"><span class="eyebrow">LOOP17 · ANDROID</span></div>
+<h1>LOOPWAVE</h1>
+<p class="lead">Kontakt, Unterstützung &amp; Datenschutz · Contact, support &amp; privacy · Контакты, поддержка и конфиденциальность · Contact, assistance et confidentialité</p>
+<nav class="langs"><a href="#de">Deutsch</a><a href="#en">English</a><a href="#ru">Русский</a><a href="#fr">Français</a></nav>
+</header>
+<section class="lang" id="de" lang="de"><p class="eyebrow">DEUTSCH</p><section class="contact" aria-labelledby="contact-de"><h2 id="contact-de">Kontakt</h2><div class="contacts"><a class="contact-card" href="mailto:info@loop17.de"><span>Allgemeine Anfragen</span><strong>info@loop17.de</strong></a><a class="contact-card" href="mailto:support@loop17.de"><span>Hilfe &amp; Fehler melden</span><strong>support@loop17.de</strong></a><a class="contact-card" href="mailto:developer@loop17.de"><span>Entwicklung &amp; technische Fragen</span><strong>developer@loop17.de</strong></a><a class="contact-card" href="mailto:billing@loop17.de"><span>Abrechnung &amp; Zahlungen</span><strong>billing@loop17.de</strong></a></div><div class="support"><h3>LOOPWAVE unterstützen</h3><p>Wenn dir LOOPWAVE gefällt, kannst du die Entwicklung freiwillig über PayPal unterstützen.</p><a class="button" href="https://paypal.me/loop17de" rel="external noopener noreferrer">Mit PayPal unterstützen ↗</a><p class="muted">Der Link öffnet PayPal. Es wird erst eine Verbindung zu PayPal hergestellt, wenn du ihn anklickst.</p></div><h3>Hinweis zu Fehlern</h3><p>Trotz sorgfältiger Bearbeitung können Tippfehler, Übersetzungsfehler oder technische Fehler vorkommen. Wenn dir etwas auffällt, schreibe bitte an support@loop17.de. Wir freuen uns über Hinweise und korrigieren Fehler nach Prüfung.</p></section>
     <h2>Datenschutzerklärung</h2>
     <p class="muted">Stand: 30. September 2026 · gilt für die Android-App „LOOPWAVE" (com.loop17.loopwave)</p>
 
@@ -62,37 +70,30 @@
       77880 Sasbach, Deutschland<br>
       E-Mail: <a href="mailto:info@loop17.de">info@loop17.de</a>
     </address>
-    <p>Fragen zum Datenschutz oder zur App: <a href="mailto:support@loop17.de">support@loop17.de</a><br>
-      Fragen zu Käufen: <a href="mailto:billing@loop17.de">billing@loop17.de</a></p>
 
     <h3>2. Welche Daten die App speichert</h3>
     <p>Damit deine Einstellungen und Bestwerte erhalten bleiben, speichert die App folgende Werte
       <strong>ausschließlich lokal auf deinem Gerät</strong>:</p>
     <table>
-      <tr><th>Wert</th><th>Zweck</th></tr>
+      <tbody><tr><th scope="col">Wert</th><th>Zweck</th></tr>
       <tr><td>Sprache</td><td>Anzeige in Deutsch, Englisch oder Russisch</td></tr>
       <tr><td>Schwierigkeitsstufe</td><td>zuletzt gewählte Stufe</td></tr>
-      <tr><td>Musik und Soundeffekte an/aus, jeweilige Lautstärke</td><td>Audioeinstellungen</td></tr>
+      <tr><td>Sound an/aus, Lautstärke</td><td>Audioeinstellungen</td></tr>
       <tr><td>Vibration an/aus</td><td>haptisches Feedback</td></tr>
-      <tr><td>Steuerung (Wischen/Tippen)</td><td>Bedienung</td></tr>
       <tr><td>Design (hell/dunkel)</td><td>Darstellung</td></tr>
-      <tr><td>Bestwerte je Stufe, Anzahl Spiele, Gesamtpunkte</td><td>Highscore- und Statistik-Anzeige</td></tr>
-      <tr><td>Anleitung gesehen, Status der Bewertungs-Bitte</td><td>Hinweise nicht unnötig wiederholen</td></tr>
-      <tr><td>Exklusiv-Paket: Stil, Musik-Set, App-Icon, Zen-Modus, Ring-Sprung</td><td>deine Auswahl im Exklusiv-Paket</td></tr>
-      <tr><td>Exklusiv-Paket gekauft (ja/nein)</td><td>Zwischenspeicher, damit das Paket auch offline freigeschaltet bleibt</td></tr>
-    </table>
+      <tr><td>Bestwerte je Stufe</td><td>Highscore-Anzeige</td></tr>
+    </tbody></table>
     <p>Diese Daten verlassen dein Gerät nicht und lassen keinen Rückschluss auf deine Person zu.
       Rechtsgrundlage ist § 25 Abs. 2 Nr. 2 TDDDG (unbedingt erforderliche Speicherung für die von dir gewünschte Funktion).</p>
 
     <h3>3. Keine Übermittlung ins Internet</h3>
     <p>Alle Inhalte der App – einschließlich der Schriftarten – sind in der App enthalten. Die App baut keine Verbindungen
-      zu eigenen Servern oder Servern Dritter auf (Ausnahme: der Kauf des Exklusiv-Pakets und die Prüfung des Kaufstatus über Google Play, siehe Abschnitt 5). Die im System eingetragene Berechtigung „Internetzugriff" ist eine technische Voreinstellung
+      zu Servern auf. Die im System eingetragene Berechtigung „Internetzugriff" ist eine technische Voreinstellung
       des verwendeten Frameworks (Capacitor) und wird von LOOPWAVE nicht genutzt.</p>
 
     <h3>4. Berechtigungen</h3>
     <ul>
       <li><strong>Vibration</strong> – für kurzes haptisches Feedback im Spiel. Kann in den Einstellungen der App ausgeschaltet werden.</li>
-      <li><strong>Google-Play-Abrechnung</strong> – für den Kauf des Exklusiv-Pakets, den du selbst auslöst, und um beim Start zu prüfen, ob du es bereits gekauft hast.</li>
     </ul>
 
     <h3>5. Google Play</h3>
@@ -100,13 +101,6 @@
       (z.&nbsp;B. Kontodaten, Kaufhistorie). Falls du in den Android-Einstellungen der Weitergabe von Diagnosedaten
       zugestimmt hast, stellt Google uns außerdem anonymisierte Absturz- und Leistungsstatistiken bereit, die keinen
       Rückschluss auf einzelne Personen zulassen. Details: <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>.</p>
-    <p><strong>Exklusiv-Paket (In-App-Kauf):</strong> LOOPWAVE ist kostenlos und ohne Werbung. Mit dem optionalen, einmaligen
-      Kauf des Exklusiv-Pakets unterstützt du die Weiterentwicklung; als Dankeschön werden zusätzliche Stile, Musik-Sets,
-      der Zen-Modus und alternative App-Icons freigeschaltet.
-      Die Zahlung wird vollständig über Google Play abgewickelt; Google ist dafür eigenständig verantwortlich. Wir erhalten dabei
-      keine Zahlungsdaten und keine Daten, die dich identifizieren. Die App fragt bei Google Play lediglich ab, ob für dein
-      Google-Konto ein gültiger Kauf vorliegt, und speichert das Ergebnis lokal. Bei Fragen zu Käufen:
-      <a href="mailto:billing@loop17.de">billing@loop17.de</a>.</p>
 
     <h3>6. Kinder</h3>
     <p>Die App erhebt keine Daten – auch nicht von Kindern.</p>
@@ -116,7 +110,7 @@
       <em>Einstellungen → Apps → LOOPWAVE → Speicher → Daten löschen</em> den App-Speicher leerst.</p>
 
     <h3>8. Deine Rechte</h3>
-    <p>Da wir keine personenbezogenen Daten verarbeiten, liegen uns keine Daten über dich vor. Unabhängig davon hast du
+    <p>Die App selbst übermittelt uns keine personenbezogenen Daten. Unabhängig davon hast du
       nach der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit
       und Widerspruch sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren – zuständig ist z.&nbsp;B. der
       <a href="https://www.baden-wuerttemberg.datenschutz.de" rel="noopener">Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg</a>.</p>
@@ -124,19 +118,16 @@
     <h3>9. Änderungen</h3>
     <p>Sollte sich die App so ändern, dass Daten erhoben werden, wird diese Erklärung vorher angepasst.</p>
 
-    <h2 id="impressum">Impressum</h2>
+    <h3>10. Diese Website, E-Mail und freiwillige Unterstützung</h3><p>Die Angaben zur lokalen Speicherung und zur fehlenden Datenübertragung betreffen die App. Für den Besuch dieser Website, deine E-Mails und Zahlungen gelten die folgenden Hinweise:</p><ul><li><strong>Website:</strong> Diese Seite wird auf GitHub Pages gehostet. GitHub protokolliert IP-Adressen aus Sicherheitsgründen. Wir binden keine Analysewerkzeuge, externen Schriftarten oder PayPal-Widgets ein. Weitere Informationen: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="external noopener noreferrer">GitHub-Datenschutzerklärung</a>.</li><li><strong>E-Mail:</strong> Wenn du uns schreibst, verarbeiten wir deine E-Mail-Adresse, den Inhalt deiner Nachricht und freiwillig mitgeteilte Angaben, um dein Anliegen zu bearbeiten. Bitte sende keine unnötigen sensiblen Daten. Wir löschen die Korrespondenz, sobald sie für diesen Zweck nicht mehr benötigt wird, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</li><li><strong>PayPal:</strong> Die Unterstützung ist freiwillig. Beim Öffnen des Links und bei einer Zahlung verarbeitet PayPal personenbezogene Daten. Uns können die für den Zahlungsempfang bereitgestellten Angaben zum Absender und zur Zahlung angezeigt werden. Diese verwenden wir zur Abwicklung und gegebenenfalls für gesetzliche Aufbewahrungspflichten. Weitere Informationen: <a href="https://www.paypal.com/de/datenschutz" rel="external noopener noreferrer">PayPal-Datenschutzerklärung</a>.</li></ul><p>Rechtsgrundlagen sind, je nach Vorgang, Art. 6 Abs. 1 Buchst. b DSGVO für vertragsbezogene Anfragen und die Zahlungsabwicklung, Buchst. f für die Bearbeitung sonstiger Anfragen und den sicheren Betrieb der Website sowie Buchst. c für gesetzliche Pflichten. Unsere berechtigten Interessen sind die Beantwortung deiner Anliegen und die sichere Bereitstellung dieser Informationen. Die oben genannten Datenschutzrechte gelten auch für diese Verarbeitungen. Ansprechpartner: <a href="mailto:info@loop17.de">info@loop17.de</a>.</p><h2 id="impressum">Impressum</h2>
     <p class="muted">Angaben gemäß § 5 DDG</p>
     <address>
       Loop17 – Eugen Jochim-Tichonowski<br>
       Kirchwegfeld 17<br>
       77880 Sasbach, Deutschland<br>
-      E-Mail: <a href="mailto:info@loop17.de">info@loop17.de</a><br>
-      Telefon: 015202382968
-    </address>
+      E-Mail: <a href="mailto:info@loop17.de">info@loop17.de</a>
+    <br>Telefon: 015202382968</address>
   </section>
-
-  <!-- ===================== ENGLISH ===================== -->
-  <section class="lang" id="en" lang="en">
+<section class="lang" id="en" lang="en"><p class="eyebrow">ENGLISH</p><section class="contact" aria-labelledby="contact-en"><h2 id="contact-en">Contact</h2><div class="contacts"><a class="contact-card" href="mailto:info@loop17.de"><span>General enquiries</span><strong>info@loop17.de</strong></a><a class="contact-card" href="mailto:support@loop17.de"><span>Help &amp; report a problem</span><strong>support@loop17.de</strong></a><a class="contact-card" href="mailto:developer@loop17.de"><span>Development &amp; technical questions</span><strong>developer@loop17.de</strong></a><a class="contact-card" href="mailto:billing@loop17.de"><span>Billing &amp; payments</span><strong>billing@loop17.de</strong></a></div><div class="support"><h3>Support LOOPWAVE</h3><p>If you enjoy LOOPWAVE, you can voluntarily support its development through PayPal.</p><a class="button" href="https://paypal.me/loop17de" rel="external noopener noreferrer">Support with PayPal ↗</a><p class="muted">This link opens PayPal. A connection to PayPal is only made when you click it.</p></div><h3>About errors</h3><p>Despite careful preparation, typos, translation mistakes or technical issues may occur. If you notice a problem, please write to support@loop17.de. We welcome feedback and correct errors after reviewing them.</p></section>
     <h2>Privacy Policy</h2>
     <p class="muted">Last updated: 30 September 2026 · applies to the Android app "LOOPWAVE" (com.loop17.loopwave)</p>
 
@@ -151,35 +142,28 @@
       77880 Sasbach, Germany<br>
       Email: <a href="mailto:info@loop17.de">info@loop17.de</a>
     </address>
-    <p>Questions about privacy or the app: <a href="mailto:support@loop17.de">support@loop17.de</a><br>
-      Questions about purchases: <a href="mailto:billing@loop17.de">billing@loop17.de</a></p>
 
     <h3>2. Data stored by the app</h3>
     <p>To keep your settings and best scores, the app stores the following values <strong>only locally on your device</strong>:</p>
     <table>
-      <tr><th>Value</th><th>Purpose</th></tr>
+      <tbody><tr><th>Value</th><th>Purpose</th></tr>
       <tr><td>Language</td><td>German, English or Russian interface</td></tr>
       <tr><td>Difficulty</td><td>last selected level</td></tr>
-      <tr><td>Music and sound effects on/off, their volumes</td><td>audio settings</td></tr>
+      <tr><td>Sound on/off, volume</td><td>audio settings</td></tr>
       <tr><td>Vibration on/off</td><td>haptic feedback</td></tr>
-      <tr><td>Controls (swipe/tap)</td><td>input</td></tr>
       <tr><td>Theme (light/dark)</td><td>appearance</td></tr>
-      <tr><td>Best score per level, games played, total points</td><td>high score and stats display</td></tr>
-      <tr><td>Tutorial seen, state of the rating request</td><td>avoid repeating hints</td></tr>
-      <tr><td>Exclusive pack: style, music set, app icon, Zen mode, ring jump</td><td>your choices in the exclusive pack</td></tr>
-      <tr><td>Exclusive pack purchased (yes/no)</td><td>cache so the pack stays unlocked while offline</td></tr>
-    </table>
+      <tr><td>Best score per level</td><td>high score display</td></tr>
+    </tbody></table>
     <p>This data never leaves your device and cannot be used to identify you.</p>
 
     <h3>3. No internet transmission</h3>
-    <p>All content of the app – including fonts – is bundled with the app. The app does not connect to our own or third-party servers (exception: buying the exclusive pack and checking its purchase status via Google Play, see section 5).
+    <p>All content of the app – including fonts – is bundled with the app. The app does not connect to any server.
       The "internet access" permission listed by the system is a technical default of the framework used (Capacitor)
       and is not used by LOOPWAVE.</p>
 
     <h3>4. Permissions</h3>
     <ul>
       <li><strong>Vibration</strong> – for short haptic feedback during play. Can be turned off in the app's settings.</li>
-      <li><strong>Google Play billing</strong> – for buying the exclusive pack, which you start yourself, and to check at launch whether you already own it.</li>
     </ul>
 
     <h3>5. Google Play</h3>
@@ -187,11 +171,6 @@
       purchase history). If you have agreed to share diagnostic data in your Android settings, Google also provides us with
       anonymised crash and performance statistics that cannot identify individuals.
       See <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.</p>
-    <p><strong>Exclusive pack (in-app purchase):</strong> LOOPWAVE is free and has no ads. The optional one-time purchase of the
-      exclusive pack supports further development; as a thank-you it unlocks extra styles, music sets, Zen mode and alternative app icons.
-      Payment is handled entirely by Google Play, which is independently responsible for it. We receive no payment details and
-      no data that identifies you. The app only asks Google Play whether a valid purchase exists for your Google account and stores
-      the result locally. Questions about purchases: <a href="mailto:billing@loop17.de">billing@loop17.de</a>.</p>
 
     <h3>6. Children</h3>
     <p>The app does not collect any data – including from children.</p>
@@ -201,22 +180,50 @@
       <em>Settings → Apps → LOOPWAVE → Storage → Clear data</em>.</p>
 
     <h3>8. Your rights</h3>
-    <p>As we do not process personal data, we hold no data about you. Under the GDPR you nevertheless have the right of access,
+    <p>The app itself does not transmit personal data to us. Under the GDPR you nevertheless have the right of access,
       rectification, erasure, restriction, data portability and objection, and the right to lodge a complaint with a
       data protection supervisory authority.</p>
 
     <h3>9. Changes</h3>
     <p>If the app ever changes in a way that involves collecting data, this policy will be updated beforehand.</p>
 
-    <h2>Imprint</h2>
+    <h3>10. This website, email and voluntary support</h3><p>The statements about local storage and no data transmission concern the app. Visits to this website, emails and payments are covered by the following information:</p><ul><li><strong>Website:</strong> This site is hosted on GitHub Pages. GitHub logs IP addresses for security purposes. We do not embed analytics, external fonts or PayPal widgets. More information: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="external noopener noreferrer">GitHub Privacy Statement</a>.</li><li><strong>Email:</strong> When you contact us, we process your email address, message and any information you voluntarily provide to handle your enquiry. Please do not send unnecessary sensitive information. We delete correspondence when it is no longer needed for this purpose, unless legal retention requirements apply.</li><li><strong>PayPal:</strong> Support is voluntary. PayPal processes personal data when you open the link or make a payment. We may receive sender and payment details made available to payment recipients. We use them to process the payment and, where applicable, comply with legal retention requirements. More information: <a href="https://www.paypal.com/de/datenschutz" rel="external noopener noreferrer">PayPal Privacy Statement</a>.</li></ul><p>Depending on the activity, the legal bases are Article 6(1)(b) GDPR for contract-related enquiries and payment processing, Article 6(1)(f) for other enquiries and secure website operation, and Article 6(1)(c) for legal obligations. Our legitimate interests are responding to your enquiries and providing this information securely. The privacy rights described above also apply to these activities. Contact: <a href="mailto:info@loop17.de">info@loop17.de</a>.</p><h2>Imprint</h2>
     <address>
       Loop17 – Eugen Jochim-Tichonowski<br>
       Kirchwegfeld 17<br>
       77880 Sasbach, Germany<br>
-      Email: <a href="mailto:info@loop17.de">info@loop17.de</a><br>
-      Phone: +49 15202382968
-    </address>
+      Email: <a href="mailto:info@loop17.de">info@loop17.de</a>
+    <br>Phone: +49 15202382968</address>
   </section>
+<section class="lang" id="ru" lang="ru"><p class="eyebrow">РУССКИЙ</p><section class="contact" aria-labelledby="contact-ru"><h2 id="contact-ru">Контакты</h2><div class="contacts"><a class="contact-card" href="mailto:info@loop17.de"><span>Общие вопросы</span><strong>info@loop17.de</strong></a><a class="contact-card" href="mailto:support@loop17.de"><span>Помощь и сообщения об ошибках</span><strong>support@loop17.de</strong></a><a class="contact-card" href="mailto:developer@loop17.de"><span>Разработка и технические вопросы</span><strong>developer@loop17.de</strong></a><a class="contact-card" href="mailto:billing@loop17.de"><span>Счета и платежи</span><strong>billing@loop17.de</strong></a></div><div class="support"><h3>Поддержать LOOPWAVE</h3><p>Если вам нравится LOOPWAVE, вы можете добровольно поддержать разработку через PayPal.</p><a class="button" href="https://paypal.me/loop17de" rel="external noopener noreferrer">Поддержать через PayPal ↗</a><p class="muted">Ссылка открывает PayPal. Соединение с PayPal устанавливается только после нажатия на ссылку.</p></div><h3>Об ошибках</h3><p>Несмотря на тщательную подготовку, возможны опечатки, неточности перевода и технические ошибки. Если вы заметили проблему, напишите на support@loop17.de. Мы благодарны за замечания и исправляем ошибки после проверки.</p></section><h2>Политика конфиденциальности</h2><p class="muted">Обновлено: 30 сентября 2026 г. · Android-приложение LOOPWAVE (com.loop17.loopwave)</p><h3>Кратко</h3><p>Приложение LOOPWAVE не собирает персональные данные. В нём нет учётных записей, рекламы, аналитики или средств отслеживания. Приложение не отправляет данные нам или третьим лицам.</p><h3>1. Ответственный за обработку данных</h3><address>Loop17 – Eugen Jochim-Tichonowski<br>Kirchwegfeld 17<br>77880 Sasbach, Германия<br>Электронная почта: <a href="mailto:info@loop17.de">info@loop17.de</a></address><h3>2. Данные, которые хранит приложение</h3><p>Настройки и рекорды хранятся исключительно локально на вашем устройстве:</p><table><tbody><tr><th scope="col">Данные</th><th scope="col">Назначение</th></tr><tr><td>Язык</td><td>Интерфейс на немецком, английском или русском</td></tr><tr><td>Сложность</td><td>Последний выбранный уровень</td></tr><tr><td>Звук и громкость</td><td>Настройки звука</td></tr><tr><td>Вибрация</td><td>Тактильный отклик</td></tr><tr><td>Светлая или тёмная тема</td><td>Оформление</td></tr><tr><td>Рекорды по уровням</td><td>Отображение лучших результатов</td></tr></tbody></table><p>Эти данные не покидают устройство и не позволяют установить вашу личность. Правовое основание: § 25 абз. 2 № 2 TDDDG — хранение, необходимое для запрошенной вами функции.</p><h3>3. Отсутствие передачи данных в интернет</h3><p>Все материалы, включая шрифты, входят в состав приложения. Приложение не подключается к серверам. Системное разрешение на доступ к интернету является технической настройкой используемого фреймворка Capacitor и не используется LOOPWAVE.</p><h3>4. Разрешения</h3><p><strong>Вибрация</strong> используется для краткого тактильного отклика во время игры. Её можно отключить в настройках приложения.</p><h3>5. Google Play</h3><p>При загрузке приложения через Google Play компания Google самостоятельно обрабатывает данные, например сведения об аккаунте и истории покупок. Если в настройках Android вы разрешили отправку диагностических данных, Google также предоставляет нам обезличенную статистику сбоев и производительности, не позволяющую определить отдельных пользователей. Подробнее: <a href="https://policies.google.com/privacy" rel="external noopener noreferrer">политика конфиденциальности Google</a>.</p><h3>6. Дети</h3><p>Приложение не собирает данные, в том числе данные детей.</p><h3>7. Удаление данных</h3><p>Вы можете удалить все сохранённые значения, удалив приложение или выбрав в Android: <em>Настройки → Приложения → LOOPWAVE → Память → Очистить данные</em>.</p><h3>8. Ваши права</h3><p>Само приложение не передаёт нам персональные данные. В отношении обработки персональных данных вы имеете предусмотренные GDPR права на доступ, исправление, удаление, ограничение обработки, переносимость данных и возражение, а также право подать жалобу в надзорный орган. Например: <a href="https://www.baden-wuerttemberg.datenschutz.de" rel="external noopener noreferrer">орган по защите данных земли Баден-Вюртемберг</a>.</p><h3>9. Изменения</h3><p>Если приложение изменится и начнёт собирать данные, эта политика будет заранее обновлена.</p><h3>10. Сайт, электронная почта и добровольная поддержка</h3><p>Утверждения о локальном хранении и отсутствии передачи данных относятся к приложению. При посещении сайта, переписке и платежах действуют следующие условия:</p><ul><li><strong>Сайт:</strong> Сайт размещён на GitHub Pages. GitHub сохраняет IP-адреса в целях безопасности. Мы не встраиваем аналитику, внешние шрифты или виджеты PayPal. Подробнее: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="external noopener noreferrer">политика конфиденциальности GitHub</a>.</li><li><strong>Электронная почта:</strong> При обращении к нам мы обрабатываем ваш адрес электронной почты, текст сообщения и добровольно предоставленные сведения для ответа на запрос. Не присылайте лишние конфиденциальные данные. Переписка удаляется, когда она больше не нужна для этой цели, если закон не требует её дальнейшего хранения.</li><li><strong>PayPal:</strong> Поддержка добровольна. При открытии ссылки или проведении платежа PayPal обрабатывает персональные данные. Мы можем получить сведения об отправителе и платеже, доступные получателю. Они используются для обработки платежа и, при необходимости, выполнения установленных законом обязанностей по хранению. Подробнее: <a href="https://www.paypal.com/de/datenschutz" rel="external noopener noreferrer">политика конфиденциальности PayPal</a>.</li></ul><p>В зависимости от операции правовым основанием служат статья 6(1)(b) GDPR для договорных запросов и обработки платежей, статья 6(1)(f) для прочих обращений и безопасной работы сайта, а также статья 6(1)(c) для выполнения требований закона. Наши законные интересы — ответы на ваши обращения и безопасное предоставление информации. Указанные выше права распространяются и на эти виды обработки. Контакт: <a href="mailto:info@loop17.de">info@loop17.de</a>.</p><h2>Сведения о владельце сайта</h2><p class="muted">Сведения согласно § 5 DDG</p><address>Loop17 – Eugen Jochim-Tichonowski<br>Kirchwegfeld 17<br>77880 Sasbach, Германия<br>Электронная почта: <a href="mailto:info@loop17.de">info@loop17.de</a><br>Телефон: +49 15202382968</address></section>
+<section class="lang" id="fr" lang="fr">
+<p class="eyebrow">FRANÇAIS</p>
+<section class="contact">
+<h2>Contact</h2>
+<div class="contacts"><a class="contact-card" href="mailto:info@loop17.de"><span>Demandes générales</span><strong>info@loop17.de</strong></a><a class="contact-card" href="mailto:support@loop17.de"><span>Aide et signalement d'un problème</span><strong>support@loop17.de</strong></a><a class="contact-card" href="mailto:developer@loop17.de"><span>Développement et questions techniques</span><strong>developer@loop17.de</strong></a><a class="contact-card" href="mailto:billing@loop17.de"><span>Facturation et paiements</span><strong>billing@loop17.de</strong></a></div>
+<div class="support"><h3>Soutenir LOOPWAVE</h3><p>Si vous aimez LOOPWAVE, vous pouvez soutenir volontairement son développement via PayPal.</p><a class="button" href="https://paypal.me/loop17de" target="_blank" rel="external noopener noreferrer">Soutenir via PayPal ↗</a><p class="muted">Ce lien ouvre PayPal. Une connexion à PayPal n'est établie que lorsque vous cliquez dessus.</p></div>
+<h3>À propos des erreurs</h3><p>Malgré une préparation soignée, des fautes de frappe, des erreurs de traduction ou des problèmes techniques peuvent survenir. Si vous remarquez un problème, écrivez à <a href="mailto:support@loop17.de">support@loop17.de</a>. Vos retours sont les bienvenus et nous corrigeons les erreurs après vérification.</p>
+</section>
+<h2>Politique de confidentialité</h2>
+<p class="muted">Dernière mise à jour : 30 septembre 2026 · s'applique à l'application Android « LOOPWAVE » (com.loop17.loopwave)</p>
+<h3>En bref</h3><p>LOOPWAVE ne collecte aucune donnée personnelle. L'application n'a ni compte utilisateur, ni publicité, ni outil d'analyse ou de suivi, et n'envoie aucune donnée à nous ni à des tiers.</p>
+<h3>1. Responsable du traitement</h3><address>Loop17 – Eugen Jochim-Tichonowski<br>Kirchwegfeld 17<br>77880 Sasbach, Allemagne<br>E-mail : <a href="mailto:info@loop17.de">info@loop17.de</a></address>
+<h3>2. Données enregistrées par l'application</h3><p>Pour conserver vos réglages et vos meilleurs scores, l'application enregistre les valeurs suivantes uniquement en local sur votre appareil :</p>
+<table><thead><tr><th>Valeur</th><th>Finalité</th></tr></thead><tbody><tr><td>Langue</td><td>interface en allemand, anglais ou russe</td></tr><tr><td>Difficulté</td><td>dernier niveau sélectionné</td></tr><tr><td>Son activé/désactivé, volume</td><td>réglages audio</td></tr><tr><td>Vibration activée/désactivée</td><td>retour haptique</td></tr><tr><td>Thème (clair/sombre)</td><td>apparence</td></tr><tr><td>Meilleur score par niveau</td><td>affichage du record</td></tr></tbody></table>
+<p>Ces données ne quittent jamais votre appareil et ne permettent pas de vous identifier.</p>
+<h3>3. Aucune transmission via Internet</h3><p>Tous les contenus de l'application – y compris les polices – sont inclus dans l'application. L'application ne se connecte à aucun serveur. L'autorisation « accès à Internet » indiquée par le système est un réglage technique par défaut du framework utilisé (Capacitor) et n'est pas utilisée par LOOPWAVE.</p>
+<h3>4. Autorisations</h3><ul><li>Vibration – pour un court retour haptique pendant le jeu. Peut être désactivée dans les paramètres de l'application.</li></ul>
+<h3>5. Google Play</h3><p>Lorsque vous téléchargez LOOPWAVE depuis Google Play, Google traite des données sous sa propre responsabilité (par ex. données de compte, historique d'achats). Si vous avez accepté de partager des données de diagnostic dans vos paramètres Android, Google nous fournit également des statistiques anonymisées de plantages et de performances qui ne permettent d'identifier personne. Voir la <a href="https://policies.google.com/privacy" target="_blank" rel="external noopener noreferrer">politique de confidentialité de Google</a>.</p>
+<h3>6. Enfants</h3><p>L'application ne collecte aucune donnée – y compris celles des enfants.</p>
+<h3>7. Suppression des données</h3><p>Vous pouvez supprimer toutes les valeurs enregistrées à tout moment en désinstallant l'application ou via Paramètres → Applications → LOOPWAVE → Stockage → Effacer les données.</p>
+<h3>8. Vos droits</h3><p>L'application elle-même ne nous transmet aucune donnée personnelle. En vertu du RGPD, vous disposez néanmoins d'un droit d'accès, de rectification, d'effacement, de limitation, de portabilité et d'opposition, ainsi que du droit d'introduire une réclamation auprès d'une autorité de contrôle de la protection des données.</p>
+<h3>9. Modifications</h3><p>Si l'application devait un jour évoluer de manière à impliquer une collecte de données, cette politique sera mise à jour au préalable.</p>
+<h3>10. Ce site web, e-mail et soutien volontaire</h3><p>Les déclarations relatives au stockage local et à l'absence de transmission de données concernent l'application. Les visites de ce site, les e-mails et les paiements sont couverts par les informations suivantes :</p>
+<ul><li><strong>Site web :</strong> ce site est hébergé sur GitHub Pages. GitHub enregistre les adresses IP à des fins de sécurité. Nous n'intégrons ni outils d'analyse, ni polices externes, ni widgets PayPal. Plus d'informations : <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="external noopener noreferrer">déclaration de confidentialité de GitHub</a>.</li><li><strong>E-mail :</strong> lorsque vous nous contactez, nous traitons votre adresse e-mail, votre message et les informations que vous nous communiquez volontairement afin de traiter votre demande. Merci de ne pas envoyer d'informations sensibles inutiles. Nous supprimons la correspondance lorsqu'elle n'est plus nécessaire à cette fin, sauf obligation légale de conservation.</li><li><strong>PayPal :</strong> le soutien est volontaire. PayPal traite des données personnelles lorsque vous ouvrez le lien ou effectuez un paiement. Nous pouvons recevoir les données d'expéditeur et de paiement mises à la disposition des bénéficiaires. Nous les utilisons pour traiter le paiement et, le cas échéant, respecter les obligations légales de conservation. Plus d'informations : <a href="https://www.paypal.com/de/datenschutz" target="_blank" rel="external noopener noreferrer">déclaration de confidentialité de PayPal</a>.</li></ul>
+<p>Selon l'activité, les bases juridiques sont l'article 6, paragraphe 1, point b) du RGPD pour les demandes liées à un contrat et le traitement des paiements, l'article 6, paragraphe 1, point f) pour les autres demandes et la sécurité du fonctionnement du site, et l'article 6, paragraphe 1, point c) pour les obligations légales. Nos intérêts légitimes sont de répondre à vos demandes et de fournir ces informations en toute sécurité. Les droits décrits ci-dessus s'appliquent également à ces activités. Contact : <a href="mailto:info@loop17.de">info@loop17.de</a>.</p>
+<h2>Mentions légales</h2><address>Loop17 – Eugen Jochim-Tichonowski<br>Kirchwegfeld 17<br>77880 Sasbach, Allemagne<br>E-mail : <a href="mailto:info@loop17.de">info@loop17.de</a><br>Téléphone : +49 15202382968</address>
+</section>
+<footer><strong>Loop17 · LOOPWAVE</strong><span><a href="#de">Deutsch</a> · <a href="#en">English</a> · <a href="#ru">Русский</a> · <a href="#fr">Français</a></span><a href="https://loop17.de/">loop17.de</a></footer>
 </main>
 </body>
 </html>
